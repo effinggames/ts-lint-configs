@@ -1,14 +1,13 @@
-# TSLint Config Airbnb
+# lint-configs
 
-[![NPM version](https://img.shields.io/npm/v/tslint-config-airbnb.svg?style=flat)](https://www.npmjs.com/package/tslint-config-airbnb)
-[![Downloads](http://img.shields.io/npm/dm/tslint-config-airbnb.svg?style=flat)](https://npmjs.org/package/tslint-config-airbnb)
+Standardized configs for tslint and prettier.
 
-> A [TSLint config](https://palantir.github.io/tslint/usage/configuration/) for [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+Fork of tslint-config-airbnb to make it a bit stricter and upgrade tslint-microsoft-contrib.
 
 ## Installation
 
 ```sh
-npm install tslint-config-airbnb --save-dev
+npm install @effinggames/tslint-configs --save-dev
 ```
 
 ## Usage
@@ -17,26 +16,19 @@ In `tslint.json`:
 
 ```json
 {
-  "extends": "tslint-config-airbnb"
+  "extends": "@effinggames/ts-lint-configs"
 }
 ```
 
+In `.prettierrc.js`:
+module.exports = require('@effinggames/ts-lint-configs/prettier);
+
 ### Rules
 
-* [tslint](https://www.npmjs.com/package/tslint)
-* [tslint-consistent-codestyle](https://www.npmjs.com/package/tslint-consistent-codestyle)
-* [tslint-eslint-rules](https://www.npmjs.com/package/tslint-eslint-rules)
-* [tslint-microsoft-contrib](https://www.npmjs.com/package/tslint-microsoft-contrib)
-
-## Versioning
-
-```
-+----- Major version is synchronize with tslint's major version.
-| +--- Minor version has BREAKING CHANGE and feat.
-| | +- Patch version has patch.
-| | |
-x.x.x
-```
+- [tslint](https://www.npmjs.com/package/tslint)
+- [tslint-consistent-codestyle](https://www.npmjs.com/package/tslint-consistent-codestyle)
+- [tslint-eslint-rules](https://www.npmjs.com/package/tslint-eslint-rules)
+- [tslint-microsoft-contrib](https://www.npmjs.com/package/tslint-microsoft-contrib)
 
 ## License
 
