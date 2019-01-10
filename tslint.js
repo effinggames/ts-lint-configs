@@ -83,6 +83,7 @@ module.exports = {
     typedef: [true, 'call-signature'],
     'ordered-imports': true,
     'no-empty-line-after-opening-brace': true,
+    'no-relative-imports': [true, 'allow-siblings'],
     'completed-docs': [
       true,
       {

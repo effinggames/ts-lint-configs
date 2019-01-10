@@ -1,4 +1,4 @@
-# lint-configs
+# ts-lint-configs
 
 Standardized configs for tslint and prettier.
 
@@ -7,7 +7,7 @@ Fork of tslint-config-airbnb to make it a bit stricter and upgrade tslint-micros
 ## Installation
 
 ```sh
-npm install @effinggames/tslint-configs --save-dev
+npm install @effinggames/ts-lint-configs --save-dev
 ```
 
 ## Usage
@@ -21,7 +21,9 @@ In `tslint.json`:
 ```
 
 In `.prettierrc.js`:
-module.exports = require('@effinggames/ts-lint-configs/prettier);
+```js
+module.exports = require('@effinggames/ts-lint-configs/prettier');
+```
 
 ### Rules
 
