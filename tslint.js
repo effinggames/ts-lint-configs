@@ -79,6 +79,7 @@ module.exports = {
     'ter-arrow-parens': false,
     'max-line-length': false,
     'no-increment-decrement': false,
+    'no-null-keyword': true,
     align: false,
     typedef: [true, 'call-signature'],
     'ordered-imports': true,
