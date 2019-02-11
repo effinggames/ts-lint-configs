@@ -80,6 +80,7 @@ module.exports = {
     'max-line-length': false,
     'no-increment-decrement': false,
     'no-null-keyword': true,
+    'no-console': [true, 'log'],
     align: false,
     typedef: [true, 'call-signature'],
     'ordered-imports': true,
